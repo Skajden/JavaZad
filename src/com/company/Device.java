@@ -11,4 +11,8 @@ public class Device {
                 this.model = model;
                 this.yearOfProduction = yearOfProduction;
         }
+
+        public String toString() {
+                return  "producer: " + this.producer + " model " + this.yearOfProduction + "yearOfproduction";
+        }
 }

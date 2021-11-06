@@ -12,6 +12,7 @@ public class Human extends Animal {
     private Double salary = 1200.0D;
     Animal pet;
     Car car;
+    double cash;
 
     Human() {
         super("homo sapiens");
@@ -27,5 +28,9 @@ public class Human extends Animal {
     Double getSalary() {
         System.out.println("wynagrodzenie: " + this.salary);
         return this.salary;
+    }
+
+    public Car getCar(){
+        return this.car;
     }
 }
