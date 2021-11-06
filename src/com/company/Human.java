@@ -28,3 +28,19 @@ public class Human {
         return this.salary;
     }
 }
+
+public class Human extends Animal{
+    String firstName;
+    String lastName;
+    Integer age;
+    private double salary;
+    Animal pet;
+    private  Car car;
+
+
+}
+
+Human() {
+    super(speces "homo sapiens");
+    this.salary = 1200.0;
+}

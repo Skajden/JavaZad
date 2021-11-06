@@ -6,12 +6,12 @@
 package com.company;
 
 public class Car {
-    String producer;
-    String model;
-    Double millage;
-    Double engineSize;
-    Integer yearOfProduction;
-    String color;
+    public String producer;
+    public String model;
+    public Double millage;
+    public Double engineSize;
+    public Integer yearOfProduction;
+    public String color;
 
     public Car() {
     }
