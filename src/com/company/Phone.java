@@ -1,20 +1,12 @@
 package com.company;
 
-public class Phone extends Device {
+public class Phone {
     String model;
-    String producent;
-    String screenSize;
+    String producer;
+    Integer yearOfProduction;
     String os;
-    String yearOfProductiom;
+    Double screensize;
 
-    @Override
-    public String toString() {
-        return "Phone{" +
-                "model='" + model + '\'' +
-                ", producent='" + producent + '\'' +
-                ", screenSize='" + screenSize + '\'' +
-                ", os='" + os + '\'' +
-                ", yearOfProductiom='" + yearOfProductiom + '\'' +
-                '}';
+    public Phone() {
     }
 }

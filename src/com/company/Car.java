@@ -5,29 +5,23 @@
 
 package com.company;
 
-public class Car {
-    public String producer;
-    public String model;
-    public Double millage;
-    public Double engineSize;
-    public Double value;
-    public String plates;
-    public Integer yearOfProduction;
+public class Car extends Device {
+    String producer;
+    String model;
+    Double millage;
+    Double engineSize;
+    Integer yearOfProduction;
+    String color;
 
-    public Car(String producer, String model, Integer yearOfProduction) {
-      super("producer", "model", "1992");
-
+    public Car(String producer, String model, Double millage, Integer yearOfProduction, Double engineSize, String color) {
+        super("producer", "model", 1992);
     }
 
     public boolean equals(Car car) {
         if (this == car) {
             return true;
-        } else if (this.producer.equals(car.producer)
-                && this.model.equals(car.model)
-                && this.millage.equals(car.millage)
-                && this.plates.equals(car.plates)) {
-            return true;
         } else {
-            return false;
+            return this.producer.equals(car.producer) && this.model.equals(car.model) && this.millage.equals(car.millage);
         }
     }
+}

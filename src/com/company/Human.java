@@ -5,7 +5,7 @@
 
 package com.company;
 
-public class Human {
+public class Human extends Animal {
     String firstName;
     String lastName;
     Integer age;
@@ -14,6 +14,7 @@ public class Human {
     Car car;
 
     Human() {
+        super("homo sapiens");
     }
 
     void setSalary(Double salary) {
@@ -27,20 +28,4 @@ public class Human {
         System.out.println("wynagrodzenie: " + this.salary);
         return this.salary;
     }
-}
-
-public class Human extends Animal{
-    String firstName;
-    String lastName;
-    Integer age;
-    private double salary;
-    Animal pet;
-    private  Car car;
-
-
-}
-
-Human() {
-    super(speces "homo sapiens");
-    this.salary = 1200.0;
 }

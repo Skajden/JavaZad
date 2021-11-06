@@ -1,13 +1,12 @@
 package com.company;
 
 public class Device {
-        final public String producer;
-        final public String model;
-        final public Integer yearOfProduction;
-        public double value;
+        public final String model;
+        public final String producer;
+        public final Integer yearOfProduction;
+        public Double value;
 
-        public device(String producer, String model, Integer yearOfProduction){
-
+        public Device(String producer, String model, Integer yearOfProduction) {
                 this.producer = producer;
                 this.model = model;
                 this.yearOfProduction = yearOfProduction;
