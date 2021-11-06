@@ -1,16 +1,15 @@
 package com.company;
 
 public class Device {
-    String model;
-    String producent;
-    String yearOfProductiom;
+        final public String producer;
+        final public String model;
+        final public Integer yearOfProduction;
+        public double value;
 
-    @Override
-    public String toString() {
-        return "Device{" +
-                "model='" + model + '\'' +
-                ", producent='" + producent + '\'' +
-                ", yearOfProductiom='" + yearOfProductiom + '\'' +
-                '}';
-    }
+        public device(String producer, String model, Integer yearOfProduction){
+
+                this.producer = producer;
+                this.model = model;
+                this.yearOfProduction = yearOfProduction;
+        }
 }
