@@ -28,13 +28,20 @@ public class Car extends Device implements Saleable{
     public void turnOn () {
         System.out.println("Przekręcam kluczyk");
     }
-    public void saleable() {
-        if(buyer.cash >= price) {
-            System.out.println("KUPUJĄCY MA MAŁO KASY");
-        }else if(seller.getCar() = null) {
-            syste.out.println()
-
-        }
+    public void sale(Human seller,Human buyer, Double price) {
+    if (buyer.cash < price) {
+        System.out.println("Kupujący ma za mało kasy");
+    } else if (seller.getCar() == null) {
+        System.out.println("SPRZEDAJĄCY NIE MA ŻADNEGO AUTA");
+    } else if (!seller.getCar().equals(this)) {
+        System.out.println("SPRZEDAJĄCY NIE MA TEGO KONKRETNEGO AUTA");
+    } else {
+        seller.cash += price;
+        buyer.cash -= price;
+        seller.car = null;
+        buyer.car = this;
+        System.out.println("Transakcja sie udała, kupiono " + this);
+    }
     }
 }
 
