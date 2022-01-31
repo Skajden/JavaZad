@@ -30,7 +30,7 @@ public class Human extends Animal {
             System.out.println("Dane wyslane do systemu ksiegowego");
             System.out.println("odbierz aneks od pani hani");
             System.out.println("Zus i us juz wiedza o pieniadzach");
-            this.salary = salary:
+            this.salary = salary;
             System.out.println("nowe wynagrodzenie: " + this.salary);
         } else {
             System.out.println("Nie ma za darmo");
@@ -40,7 +40,7 @@ public class Human extends Animal {
     double getSalary(){
         System.out.println(new Date());
         System.out.println("Wynagrodzenie: " + this.salary);
-        return this.salary:
+        return this.salary;
     }
 
    void setCar(car newCar) {
@@ -65,4 +65,4 @@ public class Human extends Animal {
 
 
     }
-}
+

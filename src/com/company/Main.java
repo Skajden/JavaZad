@@ -42,12 +42,12 @@ public class Main {
         System.out.println("I call it " + me.pet.name);
 
         Car fiat = new Car("Fiat", "Bravo",323000.0, 2007);
-        fiat.value = 120000.0;
+        fiat.value = 12000.0;
         fiat.model = "bravo";
 
         me.setSalary(2000.0);
         me.setCar(fiat);
-        if (me.getCar(fiat);
+        if (me.getCar(fiat));
         if (me.getCar() !=null) {
             System.out.println(me.getCar().model);
         } else {

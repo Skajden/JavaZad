@@ -17,9 +17,9 @@ public class Car extends Device implements Saleable {
         if (this == car) {
             return  true;
         } else if (this.producer.equals(car.producer)
-            this.model.equals(car.model)
-            this.millage.equals(car.millage)
-            this.plates.equals(car.plates)) {
+                && this.model.equals(car.model)
+                && this.millage.equals(car.millage)
+                && this.plates.equals(car.plates)) {
             return true;
         } else {
             return false;
@@ -32,7 +32,7 @@ public class Car extends Device implements Saleable {
         if (buyer.cash <price) {
             System.out.println("Kupujacy ma za malo kasy");
         } else if (seller.hasCar(this)) {
-            System.out.println( ("SPRZEDAJĄCY NIE MA AUTA");
+            System.out.println("SPRZEDAJĄCY NIE MA AUTA");
         } else if (buyer.hasFreeParkingLot()) {
             System.out.println("Kupujacy nie ma miejsca");
         } else {
