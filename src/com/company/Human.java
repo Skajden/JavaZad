@@ -9,18 +9,22 @@ public class Human extends Animal {
     String firstName;
     String lastName;
     Integer age;
-    private Double salary = 1200.0D;
+    private Double salary;
     Animal pet;
-    Car car;
-    double cash;
+    private Car car;
 
     Human() {
         super("homo sapiens");
+        this.salary = 1200.0;
     }
 
     void setSalary(Double salary) {
-        if (salary > 0.0D) {
+        if (salary > 0) {
+            System.out.println("Dane wysłane do systemu");
             this.salary = salary;
+            System.out.println("Nowe wynagrodzenie: " + this.salary);
+        } else {
+            System.out.println("Chyba");
         }
 
     }
