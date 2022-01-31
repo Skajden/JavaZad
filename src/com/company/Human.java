@@ -1,6 +1,5 @@
 package com.company;
 
-import com.company.devices.car;
 
 import  java.util.Date;
 
