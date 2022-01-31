@@ -1,9 +1,5 @@
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
-
 package com.company;
+
 
 public class Animal {
     String species;
@@ -18,13 +14,14 @@ public class Animal {
         this.species = species;
         this.alive = true;
         if (this.species == "canis") {
-            this.weight = 21.3D;
+            this.weight = 21.3;
         } else if (this.species == "felis") {
-            this.weight = 2.5D;
+            this.weight = 2.5;
         } else {
-            this.weight = 1.0D;
-        }
+            this.weight = 1.0;
 
+
+        }
     }
 
     void introduceYourself() {
@@ -35,27 +32,25 @@ public class Animal {
         if (this.species == "felis" && foodType == "mouse") {
             System.out.println("yes, I like " + foodType);
         } else {
-            System.out.println("no you idiot ");
+            System.out.println("no you dont ");
         }
-
     }
 
     Integer getHumanAge() {
         if (this.species == "canis") {
             return this.age * 7;
+        } else if (this.species == "felis") {
+            return this.age * 10;
         } else {
-            return this.species == "felis" ? this.age * 10 : this.age;
+            return this.age;
         }
     }
 
     Double feed() {
         if (this.species == "canis") {
-            this.weight = this.weight + 1.0D;
+            this.weight += 1;
             return this.weight;
-        } else {
-            return null;
         }
+        return null;
     }
 }
-
-qqq
