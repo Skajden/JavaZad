@@ -3,15 +3,20 @@ package com.company;
 import  com.company.Human;
 import  com.company.Saleable;
 
-public class Car extends Device implements Saleable {
+public abstract class Car extends Device implements Saleable {
     public String producer;
     public String model;
-    public String millage;
-    public String engineSize;
-    public String value;
+    public Double millage;
+    public Double engineSize;
+    public Integer yearofproduction;
+    public Double value;
     public String plates;
 
-    public Car(String producer, String model, Double millage, Integer yearOfProduction);
+    public Car(String producer, String model, Double millage, Integer yearofproduction, Double value, String plates) {
+
+
+    }
+
 
     public boolean equals(Car car) {
         if (this == car) {

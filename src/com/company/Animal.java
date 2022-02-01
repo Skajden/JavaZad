@@ -9,6 +9,7 @@ public class Animal {
     Boolean alive;
 
 
+
     Animal(String species) {
         this.species = species;
         this.alive = true;
