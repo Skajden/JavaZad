@@ -1,3 +1,4 @@
+
 package com.company;
 
 public class Animal {
@@ -45,16 +46,16 @@ public class Animal {
         }
     }
 
-   public void feed() {
+    public void feed() {
         this.feed(DEFAULT_FOOD_WEIGHT);
-   }
+    }
 
-   public void feed(double foodWeight) {
+    public void feed(double foodWeight) {
         if (this.weight <= 0) {
             System.out.println("trochę za późno");
         } else {
             this.weight += foodWeight;
             System.out.println("Dzięki zza  zarcie");
         }
-   }
+    }
 }

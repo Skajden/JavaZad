@@ -1,3 +1,4 @@
+
 package com.company;
 
 import  java.util.Date;
@@ -42,24 +43,24 @@ public class Human extends Animal {
         return this.salary;
     }
 
-   void setCar(Car newCar) {
-       if (this.salary > newCar.value)  {
-           this.car = newCar;
-           System.out.println("Gratuluje kupłeś za gotówkę");
-       } else if (this.salary > newCar.value /12) {
-           this.car = newCar;
-           System.out.println("kupiłeś na raty");
-       } else {
-           System.out.println("Nie ma takiego kupowanie");
-           System.out.println("do roboty");
-           System.out.println("Zmie prce weź kredyt");
-       }
+    void setCar(Car newCar) {
+        if (this.salary > newCar.value)  {
+            this.car = newCar;
+            System.out.println("Gratuluje kupłeś za gotówkę");
+        } else if (this.salary > newCar.value /12) {
+            this.car = newCar;
+            System.out.println("kupiłeś na raty");
+        } else {
+            System.out.println("Nie ma takiego kupowanie");
+            System.out.println("do roboty");
+            System.out.println("Zmie prce weź kredyt");
+        }
 
-   }
+    }
 
-   public Car getCar(Integer parkingLotNumber) {
+    public Car getCar(Integer parkingLotNumber) {
         return this.garage[parkingLotNumber];
-   }
+    }
 
 
     public boolean hasCar(Car car) {

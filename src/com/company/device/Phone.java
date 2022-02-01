@@ -1,3 +1,4 @@
+
 package com.company.device;
 
 import com.company.Device;
@@ -17,13 +18,13 @@ public class Phone extends Device {
         super(producer, model, yearOfProduction);
     }
 
-   public void turnOn() {
+    public void turnOn() {
         System.out.println("Trzymasz przycisk i czekasz");
         System.out.println("Trzymasz przycisk i czekasz");
         System.out.println("Trzymasz przycisk i czekasz");
         System.out.println("Trzymasz przycisk i czekasz");
         System.out.println("o, włączyło się");
-   }
+    }
 
     public void installAnApp(String appName, int version, double defaultServerName){
         System.out.println("Instalowanie aplikacji " + appName);
