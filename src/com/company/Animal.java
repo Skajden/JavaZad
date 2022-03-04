@@ -1,7 +1,6 @@
-
 package com.company;
 
-public class Animal {
+abstract class Animal {
     private static final double DEFAULT_FOOD_WEIGHT =1.0 ;
     String species;
     String name;
@@ -57,5 +56,44 @@ public class Animal {
             this.weight += foodWeight;
             System.out.println("Dzięki zza  zarcie");
         }
+    }
+
+    public class FarmAnimal implements Edbile{
+        super();
+
+        public void beEaten() {
+
+            System.out.println("Moźna jeść");
+        }
+
+    }
+
+    public class Pet{
+        super();
+
+    }
+
+    interface Edbile{
+
+       void beEaten();
+    }
+
+    interface Feedable{
+
+        void feed();
+        <foodWeight> void feed(foodWeight);
+    }
+
+
+    package creatures{
+
+
+
+        class FarmAnimal;
+        class Pet;
+        interface Edible;
+        interface feed();
+        interface feed(foodWeight);
+
     }
 }

@@ -11,7 +11,7 @@ public abstract class Car extends Device implements Saleable {
     public Double engineSize;
     public Integer yearofproduction;
     public Double value;
-    public String plates;
+    public Strinzg plates;
 
     public Car(String producer, String model, Double millage, Integer yearofproduction, Double value, String plates) {
 
