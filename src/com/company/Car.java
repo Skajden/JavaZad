@@ -1,9 +1,7 @@
 
 package com.company;
-
 import  com.company.Human;
 import  com.company.Saleable;
-
 public abstract class Car extends Device implements Saleable {
     public String producer;
     public String model;
@@ -12,13 +10,8 @@ public abstract class Car extends Device implements Saleable {
     public Integer yearofproduction;
     public Double value;
     public Strinzg plates;
-
     public Car(String producer, String model, Double millage, Integer yearofproduction, Double value, String plates) {
-
-
     }
-
-
     public boolean equals(Car car) {
         if (this == car) {
             return  true;
@@ -32,8 +25,6 @@ public abstract class Car extends Device implements Saleable {
         }
     }
     public void turnOn() { System.out.println("Przekream kluczyk");}
-
-
     public void sale(Human seller, Human buyer, Double price){
         if (buyer.cash <price) {
             System.out.println("Kupujacy ma za malo kasy");
@@ -96,4 +87,3 @@ public abstract class Car extends Device implements Saleable {
         public abstract void refeul();
     }
 }
-
