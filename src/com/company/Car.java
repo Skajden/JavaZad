@@ -49,5 +49,51 @@ public abstract class Car extends Device implements Saleable {
             System.out.println("transkcja sue udala , kupiono" + this);
         }
     }
+
+    public class Electric extends refeul{
+        int Electric= 2;
+        public void refeul() {
+            if (Electric > 0) {
+                System.out.println("Kup Paliwo");
+            }
+
+            if (Electric < 0) {
+                System.out.println("Masz Paliwo");
+            }
+        }
+
+    }
+
+    public class Disel extends refeul{
+        int Disel = 4;
+
+        public void refeul() {
+            if (Disel > 0) {
+                System.out.println("Kup Paliwo");
+            }
+
+            if (Disel < 0) {
+                System.out.println("Masz Paliwo");
+            }
+        }
+
+    }
+
+    public class LPG extends refeul{
+        int LPG =1;
+        public void refeul() {
+            if (LPG > 0) {
+                System.out.println("Kup Paliwo");
+            }
+
+            if (LPG < 0) {
+                System.out.println("Masz Paliwo");
+            }
+        }
+    }
+
+    public abstract class refeul{
+        public abstract void refeul();
+    }
 }
 

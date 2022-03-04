@@ -1,7 +1,7 @@
 
-
 package com.company.device;
 
+import com.company.Car;
 import com.company.Device;
 
 import java.net.MalformedURLException;
@@ -55,4 +55,12 @@ public class Phone extends Device {
 
         }
     }
+
+    public final class paliwo extends
+            Car.Disel, Car.LPG,Car.Electric {
+
+    }
+
+
+
 }
