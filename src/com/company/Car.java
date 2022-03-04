@@ -2,6 +2,10 @@
 package com.company;
 import  com.company.Human;
 import  com.company.Saleable;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public abstract class Car extends Device implements Saleable {
     public String producer;
     public String model;
@@ -85,5 +89,28 @@ public abstract class Car extends Device implements Saleable {
 
     public abstract class refeul{
         public abstract void refeul();
+
     }
+
+public class wlascicielPojazdu{
+        public static void main(String[] args){
+            List myList = new ArrayList();
+
+            myList.add("Adam");
+            myList.add("Marek");
+            myList.add("Jan");
+
+
+            System.out.println("Aktualny właściciel: ");
+            System.out.println( myList.get(myList.size()-1));
+
+
+            for(int i=0; i <myList.size(); i++){
+                Object next = myList.get(i);
+            }
+        }
 }
+
+}
+
+
