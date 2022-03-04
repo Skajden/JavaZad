@@ -58,6 +58,8 @@ abstract class Animal {
         }
     }
 
+    public abstract void hasCar();
+
     public class FarmAnimal implements Edbile{
         super();
 
